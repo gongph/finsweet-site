@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: white;
+  }
+  .container-fluid {
+    @apply container lg:max-w-5xl;
+  }
+}
+
+@layer utilities {
+  .line {
+    @apply w-5 h-0.5 rounded-3xl bg-titleColor transition-all duration-300 ease-in-out;
+  }
+
+  .hamburger {
+    @apply flex flex-col gap-y-1 focus:outline-none md:hidden;
+    &.expanded {
+      .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+      }
+      .line:nth-child(2) {
+        opacity: 0;
+      }
+      .line:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
+
+  .sidebar-menu {
+    @apply w-full h-full right-0 fixed bg-titleColor/50 z-50 md:hidden opacity-0 transition-all duration-300 ease-in-out;
+    .sidebar-content {
+      @apply scale-0 origin-top-right transition-all duration-300 ease-in-out;
+    }
+    &.expanded {
+      @apply opacity-100;
+      .sidebar-content {
+        @apply scale-100;
+      }
+    }
+  }
+}
