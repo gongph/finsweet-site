@@ -1,5 +1,6 @@
 import visionUrl from "@/assets/blog/vision.png";
 import avatorUrl from "@/assets/blog/avator.png";
+import { Link } from "react-router-dom";
 export default function Vision() {
   return (
     <section className="bg-[#DCEAF5]">
@@ -19,15 +20,15 @@ export default function Vision() {
             the readable content of a page when looking at its layout. The Maker
             is a decentralized. We aim to attain the
           </p>
-          <a
-            href="#"
+          <Link
+            to="/blog/1"
             className="text-brandOrange hover:underline group/more text-sm block"
           >
             Read More
             <span className="group-hover/more:translate-x-0.5 duration-300 inline-block pl-1">
               →
             </span>
-          </a>
+          </Link>
         </div>
         {/* right */}
         <div className="w-full md:w-1/2 self-stretch rounded-3xl overflow-hidden">

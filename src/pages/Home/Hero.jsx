@@ -2,7 +2,12 @@ import logo1 from "@/assets/home/logo-1.svg";
 import logo2 from "@/assets/home/logo-2.svg";
 import logo3 from "@/assets/home/logo-3.svg";
 import hero from "@/assets/home/hero.png";
+import { Link, useNavigate } from "react-router-dom";
 export default function Hero() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/about");
+  }
   return (
     <section className="hero-wrapper w-full pb-6  md:py-0 bg-[#DCEAF5] relative">
       <div className="container-fluid mx-auto flex flex-col-reverse md:flex-row md:items-center">
@@ -16,12 +21,15 @@ export default function Hero() {
             varius enim in eros elementum tristique
           </p>
           <div className="flex items-center gap-x-4 md:gap-x-10 px-4 md:px-0 mt-6">
-            <button className="px-4 py-2 rounded-full bg-brandOrange/90 text-white hover:bg-brandOrange">
+            <button
+              onClick={handleClick}
+              className="px-4 py-2 rounded-full bg-brandOrange/90 text-white hover:bg-brandOrange"
+            >
               See our services
             </button>
-            <a href="#" className="text-[#1D3444] hover:underline">
+            <Link to="/services" className="text-[#1D3444] hover:underline">
               See all services
-            </a>
+            </Link>
           </div>
 
           <h3 className="px-4 md:px-0 mt-14 text-[#666]/80 tracking-wide">

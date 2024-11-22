@@ -32,12 +32,12 @@
   }
 
   .sidebar-menu {
-    @apply w-full h-full right-0 fixed bg-titleColor/50 z-50 md:hidden opacity-0 transition-all duration-300 ease-in-out;
+    @apply w-0 h-0 right-0 fixed bg-titleColor/50 z-50 opacity-0 md:hidden origin-center;
     .sidebar-content {
       @apply scale-0 origin-top-right transition-all duration-300 ease-in-out;
     }
     &.expanded {
-      @apply opacity-100;
+      @apply w-full h-full opacity-100;
       .sidebar-content {
         @apply scale-100;
       }

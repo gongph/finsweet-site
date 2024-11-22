@@ -22,7 +22,7 @@ export function getMenus() {
     },
     {
       id: 5,
-      name: "Contact us",
+      name: "Contact Us",
       route: "/contact",
     },
   ];

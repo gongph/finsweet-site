@@ -1,6 +1,14 @@
 import timeCircleurl from "@/assets/time-circle.svg";
 import humanUrl from "@/assets/about/human.png";
+import { useNavigate } from "react-router-dom";
+
 export default function Human() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/careers/apply");
+  }
+
   return (
     <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-4">
       {/* left */}
@@ -13,7 +21,10 @@ export default function Human() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
           odio, sagittis quis ornare quis.
         </p>
-        <button className="bg-brandOrange text-sm text-white px-6 py-2 rounded-full focus:outline-none focus:ring-1 focus:ring-brandOrange focus:ring-offset-2 hover:scale-110 duration-300">
+        <button
+          onClick={handleClick}
+          className="bg-brandOrange text-sm text-white px-6 py-2 rounded-full focus:outline-none focus:ring-1 focus:ring-brandOrange focus:ring-offset-2 hover:scale-110 duration-300"
+        >
           Work With Us
         </button>
       </div>

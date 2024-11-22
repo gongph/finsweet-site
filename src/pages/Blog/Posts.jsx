@@ -16,7 +16,9 @@ export default function Post() {
               key={post.id}
               className="rounded-2xl bg-[#EDF7FF] py-8 px-4 md:py-0 md:px-0"
             >
-              <img src={post.image} className="object-cover rounded-lg" />
+              <Link to={`/blog/${post.id}`}>
+                <img src={post.image} className="object-cover rounded-lg" />
+              </Link>
               <div className="pt-4 md:pt-6 md:pb-4 px-6 space-y-4">
                 <Link
                   to={`/blog/${post.id}`}
