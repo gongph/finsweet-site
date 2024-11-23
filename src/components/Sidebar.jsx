@@ -30,8 +30,8 @@ export default function Sidebar({ expand, menus }) {
 
   return (
     <div className={expand ? expandClass : defaultClass}>
-      <div className="sidebar-content bg-white float-end rounded-tl-xl rounded-bl-xl mt-0.5">
-        <nav className="flex flex-col items-center gap-y-4 text-gay-700 font-medium my-5 mx-8">
+      <div className="sidebar-content bg-white dark:bg-brand-dark float-end rounded-tl-xl rounded-bl-xl mt-0.5">
+        <nav className="flex flex-col items-center gap-y-4 text-gay-700 dark:text-slate-300 font-medium my-5 mx-8">
           {menus.map((link) => {
             return (
               <NavLink

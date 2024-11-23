@@ -13,7 +13,7 @@ export default function Corner() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl md:text-5xl font-medium text-titleColor pt-6 md:pt-0"
+            className="text-3xl md:text-5xl font-medium text-titleColor dark:text-slate-300 pt-6 md:pt-0"
           >
             We want to get local identification in every corner of the world in
             this era of global citizenship.
@@ -22,7 +22,7 @@ export default function Corner() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor pr-14"
+            className="text-subTitleColor dark:text-slate-400 pr-14"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
@@ -34,7 +34,7 @@ export default function Corner() {
           <div className="absolute right-0 bottom-0 size-52 rounded-xl bg-brandOrange mix-blend-multiply"></div>
           <img
             src={cornerUrl}
-            className="object-contain rounded-xl md:w-7/10 mix-blend-multiply"
+            className="object-contain rounded-xl md:w-7/10 mix-blend-multiply dark:mix-blend-normal"
           />
         </div>
       </div>

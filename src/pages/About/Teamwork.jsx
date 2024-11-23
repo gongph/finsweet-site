@@ -13,7 +13,7 @@ export default function TeamWork() {
         variants={animate}
         initial="hide"
         whileInView="show"
-        className="text-3xl md:text-4xl font-medium max-w-sm text-titleColor"
+        className="text-3xl md:text-4xl font-medium max-w-sm text-titleColor dark:text-slate-300"
       >
         Teamwork is the only way we work
       </motion.h2>
@@ -21,7 +21,7 @@ export default function TeamWork() {
         variants={animate}
         initial="hide"
         whileInView="show"
-        className="text-subTitleColor max-w-xl py-8"
+        className="text-subTitleColor dark:text-slate-400 max-w-xl py-8"
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit
         amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo

@@ -6,7 +6,7 @@ import Icon02 from "@/assets/home/support-icon.svg";
 import Icon03 from "@/assets/home/surveying-icon.svg";
 export default function Solution() {
   return (
-    <section className="solution-wrapper w-full bg-[#EDF7FF]">
+    <section className="solution-wrapper w-full bg-[#EDF7FF] dark:bg-brand-dark/20">
       <div className="container-fluid mx-auto pt-10 md:pt-16 pb-2 md:pb-4">
         {/* title */}
         <div className="flex flex-col md:flex-row justify-between">
@@ -14,7 +14,7 @@ export default function Solution() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-titleColor text-3xl font-medium px-4 md:px-0 max-w-md"
+            className="text-titleColor dark:text-slate-300 text-3xl font-medium px-4 md:px-0 max-w-md"
           >
             We are building software solution that solves your business
             challenges
@@ -23,7 +23,7 @@ export default function Solution() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-textColor px-4 md:px-0 md:text-lg mt-4 md:mt-0 max-w-lg"
+            className="text-textColor dark:text-slate-400 px-4 md:px-0 md:text-lg mt-4 md:mt-0 max-w-lg"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
@@ -37,11 +37,13 @@ export default function Solution() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="flex flex-col space-y-4 rounded-xl bg-white px-10 pt-8 pb-6"
+            className="flex flex-col space-y-4 rounded-xl bg-white dark:bg-brand-dark/30 dark:shadow-lg px-10 pt-8 pb-6"
           >
             <img src={Icon01} className="shrink-0 w-7 h-7" />
-            <h3 className="text-xl font-medium">Invoicing</h3>
-            <p className="text-subTitleColor text-sm leading-5">
+            <h3 className="text-xl font-medium dark:text-slate-400">
+              Invoicing
+            </h3>
+            <p className="text-subTitleColor dark:text-slate-500 text-sm leading-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               sit amet eros blandit, hendrerit elit et,{" "}
             </p>
@@ -51,11 +53,11 @@ export default function Solution() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="flex flex-col space-y-4 rounded-xl bg-white px-10 pt-8 pb-6"
+            className="flex flex-col space-y-4 rounded-xl bg-white dark:bg-brand-dark/30 dark:shadow-lg px-10 pt-8 pb-6"
           >
             <img src={Icon02} className="shrink-0 w-7 h-7" />
-            <h3 className="text-xl font-medium">Support</h3>
-            <p className="text-subTitleColor text-sm leading-5">
+            <h3 className="text-xl font-medium dark:text-slate-400">Support</h3>
+            <p className="text-subTitleColor dark:text-slate-500 text-sm leading-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               sit amet eros blandit, hendrerit elit et,{" "}
             </p>
@@ -65,11 +67,13 @@ export default function Solution() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="flex flex-col space-y-4 rounded-xl bg-white px-10 pt-8 pb-6"
+            className="flex flex-col space-y-4 rounded-xl bg-white dark:bg-brand-dark/30 dark:shadow-lg px-10 pt-8 pb-6"
           >
             <img src={Icon03} className="shrink-0 w-7 h-7" />
-            <h3 className="text-xl font-medium">Surveying</h3>
-            <p className="text-subTitleColor text-sm leading-5">
+            <h3 className="text-xl font-medium dark:text-slate-400">
+              Surveying
+            </h3>
+            <p className="text-subTitleColor dark:text-slate-500 text-sm leading-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
               sit amet eros blandit, hendrerit elit et,{" "}
             </p>

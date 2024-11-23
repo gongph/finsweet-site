@@ -17,7 +17,7 @@ export default function Human() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-xl"
+          className="text-3xl md:text-6xl text-[#1D3444] dark:text-slate-300 font-medium md:max-w-xl"
         >
           We hired people who are very passionate about what they do
         </motion.h1>
@@ -25,7 +25,7 @@ export default function Human() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-subTitleColor pt-4 pb-8"
+          className="text-subTitleColor dark:text-slate-400 pt-4 pb-8"
         >
           Through True Rich Attended does no end it his mother since real had
           half every him case in packages enquire we up ecstatic unsatiable saw.
@@ -45,7 +45,7 @@ export default function Human() {
         </div>
         <img
           src={hiredUrl}
-          className="mix-blend-multiply object-cover rounded-xl"
+          className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
         />
       </div>
     </section>

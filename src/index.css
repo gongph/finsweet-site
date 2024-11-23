@@ -4,16 +4,16 @@
 
 @layer base {
   body {
-    background-color: white;
+    @apply bg-white dark:bg-brand-dark/90;
   }
   .container-fluid {
-    @apply container lg:max-w-5xl;
+    @apply container lg:max-w-5xl z-10;
   }
 }
 
 @layer utilities {
   .line {
-    @apply w-5 h-0.5 rounded-3xl bg-titleColor transition-all duration-300 ease-in-out;
+    @apply w-5 h-0.5 rounded-3xl bg-titleColor dark:bg-gray-light transition-all duration-300 ease-in-out;
   }
 
   .hamburger {

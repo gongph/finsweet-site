@@ -13,15 +13,15 @@ export default function Post() {
         </div>
         {/* author info */}
         <div className="px-4 md:px-0 mt-6 md:mt-16 md:max-w-3xl">
-          <div className="flex items-center gap-x-2 text-subTitleColor text-xs mb-6">
+          <div className="flex items-center gap-x-2 text-subTitleColor dark:text-slate-500 text-xs mb-6">
             <img src={avatorUrl} className="shrink-0 size-8 cursor-pointer" />
             <span className="cursor-pointer hover:underline">
               Andrew Jonson
             </span>
             <span className="pl-4">Posted on 27th January 2021</span>
           </div>
-          <div className="space-y-6 text-subTitleColor">
-            <h1 className="text-3xl md:text-5xl font-medium text-[#1D3444]">
+          <div className="space-y-6 text-subTitleColor dark:text-slate-500">
+            <h1 className="text-3xl md:text-5xl font-medium text-[#1D3444] dark:text-slate-400">
               Breaking the code How did we build our Figma plugin
             </h1>
             <p>
@@ -52,7 +52,7 @@ export default function Post() {
               casual to playful. The intention to build this Figma plugin
               originated from our Medium blog post, ‘Designing voice.
             </p>
-            <h2 className="text-2xl md:text-4xl font-medium text-titleColor">
+            <h2 className="text-2xl md:text-4xl font-medium text-titleColor dark:text-slate-400">
               Transform Your Idea Into Reality with Ether a Leading Digital
               Agency
             </h2>

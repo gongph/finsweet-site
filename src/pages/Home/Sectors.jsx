@@ -8,10 +8,10 @@ export default function Sectors() {
   return (
     <section className="sectors container-fluid mx-auto my-10">
       {/* Sectors header */}
-      <h1 className="text-3xl px-4 md:text-4xl font-medium md:w-1/2 text-[#1D3444]">
+      <h1 className="text-3xl px-4 md:text-4xl font-medium md:w-1/2 text-[#1D3444] dark:text-slate-300">
         We help more than 1500 companies from all sectors
       </h1>
-      <p className="py-7 px-4 text-subTitleColor md:w-1/2">
+      <p className="py-7 px-4 text-subTitleColor dark:text-slate-400 md:w-1/2">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit
         amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo
         suscipit tellus et pellentesque.
@@ -23,13 +23,13 @@ export default function Sectors() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="secctors-card-item flex flex-col space-y-4"
+          className="secctors-card-item flex flex-col space-y-4 text-subTitleColor dark:text-slate-400"
         >
           <img src={sectorImg01} className="shrink-0 object-cover" />
-          <h3 className="text-titleColor font-medium text-lg">
+          <h3 className="text-titleColor dark:text-slate-300 font-medium text-lg">
             Business strategy
           </h3>
-          <p className="text-subTitleColor text-sm">
+          <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et,{" "}
           </p>
@@ -48,13 +48,13 @@ export default function Sectors() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="secctors-card-item flex flex-col space-y-4"
+          className="secctors-card-item flex flex-col space-y-4 text-subTitleColor dark:text-slate-400"
         >
           <img src={sectorImg02} className="shrink-0 object-cover" />
-          <h3 className="text-titleColor font-medium text-lg">
+          <h3 className="text-titleColor dark:text-slate-300 font-medium text-lg">
             Digitalization
           </h3>
-          <p className="text-subTitleColor text-sm">
+          <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et,{" "}
           </p>
@@ -73,13 +73,13 @@ export default function Sectors() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="secctors-card-item flex flex-col space-y-4"
+          className="secctors-card-item flex flex-col space-y-4 text-subTitleColor dark:text-slate-400"
         >
           <img src={sectorImg03} className="shrink-0 object-cover" />
-          <h3 className="text-titleColor font-medium text-lg">
+          <h3 className="text-titleColor dark:text-slate-300 font-medium text-lg">
             Risk assessment
           </h3>
-          <p className="text-subTitleColor text-sm">
+          <p className="text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et,{" "}
           </p>

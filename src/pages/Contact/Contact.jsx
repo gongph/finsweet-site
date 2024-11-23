@@ -11,10 +11,10 @@ export default function Contact() {
         <div className="flex flex-col-reverse md:flex-row mt-10 md:mt-16 md:gap-x-10">
           {/* left */}
           <div className="w-full md:w-1/2 mt-6 md:mt-0">
-            <h1 className="text-3xl md:text-5xl font-medium text-[#1D3444]">
+            <h1 className="text-3xl md:text-5xl font-medium text-[#1D3444] dark:text-slate-300">
               Have a question ? Let’s get in touch with us.
             </h1>
-            <p className="text-subTitleColor pt-5 pb-10">
+            <p className="text-subTitleColor dark:text-slate-400 pt-5 pb-10">
               Fill up the Form and ou team will get back to within 24 hrs
             </p>
             {/* form */}
@@ -24,7 +24,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 focus:outline-none placeholder:text-gray/80 placeholder:text-xs"
+                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 dark:bg-brand-dark/30 focus:outline-none placeholder:text-gray/80 dark:placeholder:text-slate-500 placeholder:text-xs"
                 />
               </label>
               {/* last name */}
@@ -32,7 +32,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 focus:outline-none placeholder:text-gray/80 placeholder:text-xs"
+                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 dark:bg-brand-dark/30 focus:outline-none placeholder:text-gray/80 dark:placeholder:text-slate-500 placeholder:text-xs"
                 />
               </label>
               {/* email */}
@@ -40,7 +40,7 @@ export default function Contact() {
                 <input
                   type="email"
                   placeholder="Email address"
-                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 focus:outline-none placeholder:text-gray/80 placeholder:text-xs"
+                  className="py-3 px-8 text-gray text-sm rounded-full w-full bg-[#F5F5F5]/50 dark:bg-brand-dark/30 focus:outline-none placeholder:text-gray/80 dark:placeholder:text-slate-500 placeholder:text-xs"
                 />
               </label>
               {/* message */}
@@ -49,7 +49,7 @@ export default function Contact() {
                   type="textarea"
                   placeholder="Type message"
                   rows="5"
-                  className="py-3 px-8 text-gray text-sm rounded-3xl w-full bg-[#F5F5F5]/50 focus:outline-none placeholder:pt-2 placeholder:text-gray/80 placeholder:text-xs resize-none"
+                  className="py-3 px-8 text-gray text-sm rounded-3xl w-full bg-[#F5F5F5]/50 dark:bg-brand-dark/30 focus:outline-none placeholder:pt-2 placeholder:text-gray/80 dark:placeholder:text-slate-500 placeholder:text-xs resize-none"
                 />
               </label>
               <label>
@@ -64,15 +64,23 @@ export default function Contact() {
             {/* top */}
             <div className="flex gap-x-5 md:gap-x-10 md:mt-4">
               <div className="spade-y-1 max-w-56">
-                <h3 className="text-titleColor font-medium mb-4">Location</h3>
-                <p className="text-subTitleColor text-sm">
+                <h3 className="text-titleColor dark:text-slate-300 font-medium mb-4">
+                  Location
+                </h3>
+                <p className="text-subTitleColor dark:text-slate-400 text-sm">
                   DLF Cybercity, Bhubaneswar, India, &52050
                 </p>
               </div>
               <div className="space-y-1">
-                <h3 className="text-titleColor font-medium mb-4">Contact Us</h3>
-                <p className="text-subTitleColor text-sm">020 7993 2905</p>
-                <p className="text-subTitleColor text-sm">hi@finsweet.com</p>
+                <h3 className="text-titleColor dark:text-slate-300 font-medium mb-4">
+                  Contact Us
+                </h3>
+                <p className="text-subTitleColor dark:text-slate-400 text-sm">
+                  020 7993 2905
+                </p>
+                <p className="text-subTitleColor dark:text-slate-400 text-sm">
+                  hi@finsweet.com
+                </p>
               </div>
             </div>
             {/* map */}

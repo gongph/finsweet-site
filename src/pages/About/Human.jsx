@@ -19,7 +19,7 @@ export default function Human() {
           variants={animate}
           initial="hide"
           animate="show"
-          className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-md"
+          className="text-3xl md:text-6xl text-[#1D3444] dark:text-slate-300 font-medium md:max-w-md"
         >
           We value human, organizational, and operational intelligence, not just
           artificial
@@ -28,7 +28,7 @@ export default function Human() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-subTitleColor md:max-w-sm pt-4 pb-8"
+          className="text-subTitleColor dark:text-slate-400 md:max-w-sm pt-4 pb-8"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
           odio, sagittis quis ornare quis.
@@ -48,7 +48,7 @@ export default function Human() {
         </div>
         <img
           src={humanUrl}
-          className="mix-blend-multiply object-cover rounded-xl"
+          className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
         />
       </div>
     </section>

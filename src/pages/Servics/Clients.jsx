@@ -17,7 +17,7 @@ export default function Clients() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-md"
+          className="text-3xl md:text-6xl text-[#1D3444] dark:text-slate-300 font-medium md:max-w-md"
         >
           We serve clients with ground breaking solutions
         </motion.h1>
@@ -25,7 +25,7 @@ export default function Clients() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          className="text-subTitleColor dark:text-slate-400 md:max-w-md pt-4 pb-8"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
           odio, sagittis quis ornare quis.
@@ -45,7 +45,7 @@ export default function Clients() {
         </div>
         <img
           src={clientUrl}
-          className="mix-blend-multiply object-cover rounded-xl"
+          className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
         />
       </div>
     </section>

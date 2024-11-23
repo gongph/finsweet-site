@@ -12,7 +12,7 @@ export default function Hero() {
     navigate("/about");
   }
   return (
-    <section className="hero-wrapper w-full pb-6  md:py-0 bg-[#DCEAF5] relative">
+    <section className="hero-wrapper w-full pb-6  md:py-0 bg-[#DCEAF5] dark:bg-brand-dark/20 relative">
       <div className="container-fluid mx-auto flex flex-col-reverse md:flex-row md:items-center">
         {/* hero left */}
         <div className="w-full md:w-1/2 hero-wrapper__left">
@@ -20,7 +20,7 @@ export default function Hero() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl px-4 md:px-0 md:pt-20 mb-6 font-medium text-[#1D3444] md:text-5xl"
+            className="text-3xl px-4 md:px-0 md:pt-20 mb-6 font-medium text-[#1D3444] dark:text-slate-300 md:text-5xl"
           >
             Prosper with our bespoke solutions
           </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="px-4 md:px-0 text-[#5B5B5B] mt-4 md:max-w-lg"
+            className="px-4 md:px-0 text-[#5B5B5B] dark:text-slate-400 mt-4 md:max-w-lg"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros elementum tristique
@@ -36,16 +36,19 @@ export default function Hero() {
           <div className="flex items-center gap-x-4 md:gap-x-10 px-4 md:px-0 mt-6">
             <button
               onClick={handleClick}
-              className="px-4 py-2 rounded-full bg-brandOrange/90 text-white hover:bg-brandOrange"
+              className="px-4 py-2 rounded-full bg-brandOrange/90 text-white dark:text-slate-200 hover:bg-brandOrange"
             >
               See our services
             </button>
-            <Link to="/services" className="text-[#1D3444] hover:underline">
+            <Link
+              to="/services"
+              className="text-[#1D3444] dark:text-slate-400 hover:underline"
+            >
               See all services
             </Link>
           </div>
 
-          <h3 className="px-4 md:px-0 mt-14 text-[#666]/80 tracking-wide">
+          <h3 className="px-4 md:px-0 mt-14 text-[#666]/80 dark:text-slate-400 tracking-wide">
             Worked with 100+ Companies
           </h3>
           <div className="w-full flex px-4 md:px-0 md:mb-8 items-center mt-4 gap-x-6">
@@ -63,7 +66,7 @@ export default function Hero() {
         {/* hero right */}
         <div className="w-full md:w-1/2 relative self-stretch md:pt-16 border-b-1 border-b-[#1D3444] md:border-none mb-4 md:mb-0 hero-wrapper_right flex items-end">
           <div className="absolute w-20 h-3/5 bg-brandOrange/50 left-1/4 rounded-tl-lg rounded-tr-lg"></div>
-          <img className="object-cover h-full" src={hero} />
+          <img className="object-cover h-full dark:opacity-80" src={hero} />
         </div>
       </div>
     </section>

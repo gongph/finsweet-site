@@ -6,19 +6,19 @@ import ribbonUrl from "@/assets/home/ribbon.svg";
 
 export default function Business() {
   return (
-    <section className="container-fluid relative mx-auto px-4 py-4 md:p-12 lg:rounded-xl bg-[#EDF7FF]">
+    <section className="container-fluid relative mx-auto px-4 py-4 md:p-12 lg:rounded-xl bg-[#EDF7FF] dark:bg-brand-dark/30">
       <div className="ribbon hidden absolute md:block md:-right-14 md:-top-3">
         <img src={ribbonUrl} className="w-1/3 md:w-3/4" />
       </div>
       {/* buttons */}
       <div className="flex items-center justify-between md:justify-start gap-x-1 my-6 md:mb-16 md:gap-x-6">
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 bg-white ring-1 ring-white rounded-full text-brandOrange shadow-md md:shadow-none">
+        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-white dark:bg-brand-dark/50 ring-1 ring-[#A8BCCC] rounded-full text-brandOrange shadow-md md:shadow-none">
           Business strategy
         </button>
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 bg-[transparent] ring-1 ring-[#A8BCCC] rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white duration-300">
+        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
           Digitalization
         </button>
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 bg-[transparent] ring-1 ring-[#A8BCCC] rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white duration-300">
+        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
           Risk assessment
         </button>
       </div>
@@ -30,7 +30,7 @@ export default function Business() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl md:text-4xl font-medium text-titleColor md:leading-tight"
+            className="text-3xl md:text-4xl font-medium text-titleColor dark:text-slate-300 md:leading-tight"
           >
             Helping clients with research and strategy for their business
           </motion.h1>
@@ -38,7 +38,7 @@ export default function Business() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor"
+            className="text-subTitleColor dark:text-slate-400"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
@@ -48,7 +48,7 @@ export default function Business() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor"
+            className="text-subTitleColor dark:text-slate-400"
           >
             Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur
             sit amet eros blan esque.

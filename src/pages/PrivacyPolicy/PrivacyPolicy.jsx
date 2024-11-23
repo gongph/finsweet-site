@@ -8,12 +8,14 @@ export default function About() {
       <Header />
       <section className="container-fluid mx-auto max-w-xl px-4 md:px-0 mt-10 mb-10 md:mt-16 md:mb-20">
         <div className="title space-y-4">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#1D3444]">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#1D3444] dark:text-slate-300">
             Privacy Policy
           </h1>
-          <p className="text-subTitleColor">Last modification: 1/8/2021</p>
+          <p className="text-subTitleColor dark:text-slate-500">
+            Last modification: 1/8/2021
+          </p>
         </div>
-        <div className="content text-subTitleColor mt-10 md:mt-16 space-y-6">
+        <div className="content text-subTitleColor dark:text-slate-500 mt-10 md:mt-16 space-y-6">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             commodo est laoreet metus maximus, in ornare nulla mattis.
@@ -33,7 +35,7 @@ export default function About() {
             Aliquam mi eros, accumsan in hendrerit sed, mollis at sapien. In
             rutrum tortor turpis, sit amet tincidunt arcu vestibulum nec.
           </p>
-          <h3 className="text-2xl text-titleColor">
+          <h3 className="text-2xl text-titleColor dark:text-slate-500">
             Who We Are and What This Policy Covers
           </h3>
           <p>
@@ -61,7 +63,9 @@ export default function About() {
             mattis. Vivamus felis mi, cursus quis elit ac, pellentesque
             malesuada erat.
           </p>
-          <h3 className="text-2xl text-titleColor">Information We Collect</h3>
+          <h3 className="text-2xl text-titleColor dark:text-slate-500">
+            Information We Collect
+          </h3>
           <p>
             Nulla in ligula nec lorem imperdiet vulputate. Donec at metus
             hendrerit, convallis dolor mollis, tincidunt felis. Aliquam tortor

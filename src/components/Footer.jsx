@@ -7,8 +7,8 @@ import { FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="footer bg-[#063255] py-14">
-      <div className="container-fluid mx-auto text-white">
+    <div className="footer bg-[#063255] dark:bg-brand-dark py-14">
+      <div className="container-fluid mx-auto text-white dark:text-slate-400">
         {/* External link */}
         <div className="external-link flex flex-col items-center md:flex-row md:items-start md:justify-between md:space-x-10">
           {/* 1 */}
@@ -69,10 +69,10 @@ export default function Footer() {
             </h3>
             <input
               type="email"
-              className="w-72 h-10 px-4 rounded-full border-none bg-white text-gray text-xs focus:outline-none placeholder:text-gray placeholder:text-xs"
+              className="w-72 h-10 px-4 rounded-full border-none bg-white dark:bg-gray-dark/30 text-gray text-xs focus:outline-none placeholder:text-gray placeholder:text-xs"
               placeholder="Type email here"
             />
-            <button className="bg-brandOrange w-28 px-4 py-2 rounded-full text-sm hover:scale-105 duration-300">
+            <button className="bg-brandOrange dark:text-slate-200 w-28 px-4 py-2 rounded-full text-sm hover:scale-105 duration-300">
               Subscribe
             </button>
           </div>

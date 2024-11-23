@@ -15,7 +15,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+            className="text-3xl md:text-4xl text-titleColor dark:text-slate-300 font-medium md:max-w-md"
           >
             Risk assessment
           </motion.h1>
@@ -23,7 +23,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+            className="text-subTitleColor dark:text-slate-400 md:max-w-md pt-4 pb-8"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
@@ -33,7 +33,7 @@ export default function Clients() {
             variants={card}
             initial="hide"
             whileInView="show"
-            className="list-disc list-inside text-subTitleColor text-sm md:leading-6"
+            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6"
           >
             <motion.li variants={cardItem}>
               Individual risk assessment
@@ -49,7 +49,7 @@ export default function Clients() {
           <div className="mix-blend-multiply absolute size-20 left-0 top-1/3 md:-left-10 md:top-1/4 bg-brandOrange rounded-xl"></div>
           <img
             src={riskUrl}
-            className="mix-blend-multiply object-cover rounded-xl"
+            className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
           />
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+            className="text-3xl md:text-4xl text-titleColor dark:text-slate-300 font-medium md:max-w-md"
           >
             Artificial intelligence
           </motion.h1>
@@ -69,7 +69,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+            className="text-subTitleColor dark:text-slate-400 md:max-w-md pt-4 pb-8"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
@@ -82,7 +82,7 @@ export default function Clients() {
           <div className="mix-blend-multiply absolute size-20 right-0 top-1/4 md:-right-10 md:top-1/4 bg-brandOrange rounded-xl"></div>
           <img
             src={artUrl}
-            className="mix-blend-multiply object-cover rounded-xl"
+            className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
           />
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+            className="text-3xl md:text-4xl text-titleColor dark:text-slate-300 font-medium md:max-w-md"
           >
             Smart Contracts
           </motion.h1>
@@ -102,7 +102,7 @@ export default function Clients() {
             variants={animate}
             initial="hide"
             whileInView="show"
-            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+            className="text-subTitleColor dark:text-slate-400 md:max-w-md pt-4 pb-8"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
@@ -112,7 +112,7 @@ export default function Clients() {
             variants={card}
             initial="hide"
             whileInView="show"
-            className="list-disc list-inside text-subTitleColor text-sm md:leading-6"
+            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6"
           >
             <motion.li variants={cardItem}>
               Smart contract implementation
@@ -126,7 +126,7 @@ export default function Clients() {
           <div className="mix-blend-multiply absolute size-20 left-0 top-2/3 md:-left-8 md:top-3/4 bg-brandOrange rounded-xl"></div>
           <img
             src={smartUrl}
-            className="mix-blend-multiply object-cover rounded-xl"
+            className="mix-blend-multiply dark:mix-blend-normal object-cover rounded-xl"
           />
         </div>
       </section>

@@ -13,7 +13,7 @@ export default function Dream() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-3xl md:text-4xl max-w-sm font-medium text-titleColor"
+          className="text-3xl md:text-4xl max-w-sm font-medium text-titleColor dark:text-slate-300"
         >
           Finsweet was a dream to work with
         </motion.h1>
@@ -21,7 +21,7 @@ export default function Dream() {
           variants={animate}
           initial="hide"
           whileInView="show"
-          className="text-subTitleColor max-w-md"
+          className="text-subTitleColor dark:text-slate-400 max-w-md"
         >
           Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel.
           Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus
@@ -33,7 +33,7 @@ export default function Dream() {
             className="w-12 h-12 rounded-full object-cover"
           />
           <div>
-            <h3 className="text-[#063255]">Chikelu Neo</h3>
+            <h3 className="text-[#063255] dark:text-slate-400">Chikelu Neo</h3>
             <p className="text-brandOrange text-sm">CEO at MazeAI</p>
           </div>
         </div>
