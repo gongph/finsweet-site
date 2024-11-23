@@ -29,7 +29,7 @@ export default function ThemeToggle() {
   return (
     <motion.div
       style={{ justifyContent: theme === "dark" ? "flex-end" : "flex-start" }}
-      className="w-14 h-6 flex items-center justify-end px-2 py-3 rounded-full bg-slate-200 dark:bg-gray-dark shadow-inner cursor-pointer"
+      className="w-14 h-6 flex items-center justify-end px-2 py-3 rounded-full bg-slate-200 dark:bg-gray-dark cursor-pointer"
       onTap={handleClick}
     >
       <motion.div layout className="size-5 flex items-center rounded-full">
