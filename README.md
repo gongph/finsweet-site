@@ -1,11 +1,8 @@
 # Finsweet site
 
-A website developed based on Vite + Tailwindcss + React
+A responsive website based on Vite + Tailwindcss + React.
 
-### Website design features
-
-- Responsive design
-- Dark theme
+The UI design is from [MasterGo](https://mastergo.com/)
 
 ### Project setup
 
@@ -31,6 +28,19 @@ pnpm build
 ```bash
 pnpm lint
 ```
+
+### Website design features
+
+- Responsive design
+- Dark theme
+
+### Tech stack
+
+- [Vite](https://vitejs.dev/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [framer-motion](https://motion.framer.wiki/)
+- [react-icons](https://react-icons.github.io/react-icons/)
 
 ### Customize configuration
 
