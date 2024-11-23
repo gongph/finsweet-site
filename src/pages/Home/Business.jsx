@@ -12,13 +12,13 @@ export default function Business() {
       </div>
       {/* buttons */}
       <div className="flex items-center justify-between md:justify-start gap-x-1 my-6 md:mb-16 md:gap-x-6">
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-white dark:bg-brand-dark/50 ring-1 ring-[#A8BCCC] rounded-full text-brandOrange shadow-md md:shadow-none">
+        <button className="px-3 text-xs md:px-4 md:text-base py-1 md:py-2 bg-white dark:bg-brand-dark/50 ring-1 ring-[#A8BCCC] rounded-full text-brandOrange shadow-md md:shadow-none">
           Business strategy
         </button>
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
+        <button className="px-3 text-xs md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
           Digitalization
         </button>
-        <button className="px-3 text-sm md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
+        <button className="px-3 text-xs md:px-4 md:text-base py-1 md:py-2 bg-[transparent] ring-1 ring-[#A8BCCC] dark:ring-gray-dark rounded-full text-[#A8BCCC] hover:ring-white hover:text-brandOrange hover:bg-white dark:hover:bg-brand-dark/30 duration-300">
           Risk assessment
         </button>
       </div>

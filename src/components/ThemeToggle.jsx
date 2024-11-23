@@ -7,7 +7,6 @@ export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.theme || "light");
 
   useEffect(() => {
-    console.log("233 :>> ", 233);
     setHtmlTheme(theme);
   }, [theme]);
 
