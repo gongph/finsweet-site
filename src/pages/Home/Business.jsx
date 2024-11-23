@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { animate } from "@/utils/animate";
+
 import businessUrl from "@/assets/home/business.png";
 import ribbonUrl from "@/assets/home/ribbon.svg";
 
@@ -23,18 +26,33 @@ export default function Business() {
       <div className="flex flex-col-reverse md:flex-row">
         {/* item-1 */}
         <div className="content-wrapper w-full md:w-1/2 space-y-8 md:pr-4 pt-4 md:pt-0">
-          <h1 className="text-3xl md:text-4xl font-medium text-titleColor md:leading-tight">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl font-medium text-titleColor md:leading-tight"
+          >
             Helping clients with research and strategy for their business
-          </h1>
-          <p className="text-subTitleColor">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
             sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
             commodo suscipit tellus et pellentesque.
-          </p>
-          <p className="text-subTitleColor">
+          </motion.p>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor"
+          >
             Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur
             sit amet eros blan esque.
-          </p>
+          </motion.p>
           <a href="#" className="text-brandOrange group block">
             <span className="hover:underline">See all services</span>
             <span className="inline-block group-hover:translate-x-0.5 duration-300 pl-1">
@@ -43,12 +61,17 @@ export default function Business() {
           </a>
         </div>
         {/* item-2 */}
-        <div className="flex-item-2 md:flex items-end justify-end w-full rounded-xl md:w-1/2 md:h-auto h-[200px] overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex-item-2 md:flex items-end justify-end w-full rounded-xl md:w-1/2 md:h-auto h-[200px] overflow-hidden"
+        >
           <img
             src={businessUrl}
             className="object-contain rounded-xl md:w-[80%]"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

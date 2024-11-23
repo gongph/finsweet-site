@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { animate } from "@/utils/animate";
+
 import dreamUrl from "@/assets/home/dream.png";
 import avatorUrl from "@/assets/home/avator.png";
 import triangleUrl from "@/assets/home/triangle.svg";
@@ -6,14 +9,24 @@ export default function Dream() {
     <section className="container-fluid mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-8 md:py-0 md:px-0 md:my-28 md:space-x-4">
       {/* item 1 */}
       <div className="w-full md:w-1/2 space-y-6">
-        <h1 className="text-3xl md:text-4xl max-w-sm font-medium text-titleColor">
+        <motion.h1
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-3xl md:text-4xl max-w-sm font-medium text-titleColor"
+        >
           Finsweet was a dream to work with
-        </h1>
-        <p className="text-subTitleColor max-w-md">
+        </motion.h1>
+        <motion.p
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-subTitleColor max-w-md"
+        >
           Maecenas efficitur scelerisque lorem, et varius lacus tincidunt vel.
           Pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus
           eleifend nec felis vel auctor.
-        </p>
+        </motion.p>
         <div className="flex items-center space-x-4">
           <img
             src={avatorUrl}

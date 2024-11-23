@@ -1,6 +1,8 @@
 import timeCircleurl from "@/assets/time-circle.svg";
 import clientUrl from "@/assets/servics/client.png";
 import { useNavigate } from "react-router-dom";
+import { animate } from "@/utils/animate";
+import { motion } from "framer-motion";
 
 export default function Clients() {
   const navigate = useNavigate();
@@ -11,13 +13,23 @@ export default function Clients() {
     <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-4">
       {/* left */}
       <div className="w-full md:w-1/2 md:my-20">
-        <h1 className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-md">
+        <motion.h1
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-md"
+        >
           We serve clients with ground breaking solutions
-        </h1>
-        <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+        </motion.h1>
+        <motion.p
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-subTitleColor md:max-w-md pt-4 pb-8"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
           odio, sagittis quis ornare quis.
-        </p>
+        </motion.p>
         <button
           onClick={handleClick}
           className="bg-brandOrange text-sm text-white px-6 py-2 rounded-full focus:outline-none focus:ring-1 focus:ring-brandOrange focus:ring-offset-2 hover:scale-110 duration-300"

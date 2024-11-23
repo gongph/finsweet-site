@@ -1,5 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { animate } from "@/utils/animate";
+import { motion } from "framer-motion";
 
 export default function Post() {
   const posts = useLoaderData(); // get the data from the loader function
@@ -12,7 +14,10 @@ export default function Post() {
         {/* grid item 1 */}
         {posts.map((post) => {
           return (
-            <div
+            <motion.div
+              variants={animate}
+              initial="hide"
+              whileInView="show"
               key={post.id}
               className="rounded-2xl bg-[#EDF7FF] py-8 px-4 md:py-0 md:px-0"
             >
@@ -37,7 +42,7 @@ export default function Post() {
                   </span>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

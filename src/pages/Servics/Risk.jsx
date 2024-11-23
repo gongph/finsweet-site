@@ -1,6 +1,8 @@
 import riskUrl from "@/assets/servics/risk.png";
 import artUrl from "@/assets/servics/art.png";
 import smartUrl from "@/assets/servics/smart.png";
+import { animate, card, cardItem } from "@/utils/animate";
+import { motion } from "framer-motion";
 
 export default function Clients() {
   return (
@@ -9,19 +11,38 @@ export default function Clients() {
       <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row-reverse justify-between px-4 pt-0 pb-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-16">
         {/* left */}
         <div className="w-full md:my-20">
-          <h1 className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+          >
             Risk assessment
-          </h1>
-          <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
             Aliquam leo odio, sagittis quis ornare quis.
-          </p>
-          <ul className="list-disc list-inside text-subTitleColor text-sm md:leading-6">
-            <li>Individual risk assessment</li>
-            <li>Systems risk assessment</li>
-            <li>Mathematical conceptualization</li>
-          </ul>
+          </motion.p>
+          <motion.ul
+            variants={card}
+            initial="hide"
+            whileInView="show"
+            className="list-disc list-inside text-subTitleColor text-sm md:leading-6"
+          >
+            <motion.li variants={cardItem}>
+              Individual risk assessment
+            </motion.li>
+            <motion.li variants={cardItem}>Systems risk assessment</motion.li>
+            <motion.li variants={cardItem}>
+              Mathematical conceptualization
+            </motion.li>
+          </motion.ul>
         </div>
         {/* right */}
         <div className="w-full md:flex justify-center md:my-10 relative rounded-xl pl-4 md:pl-0">
@@ -36,15 +57,25 @@ export default function Clients() {
       <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row justify-between px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-16">
         {/* left */}
         <div className="w-full md:my-20">
-          <h1 className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+          >
             Artificial intelligence
-          </h1>
-          <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
             Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Aliquam leo odio, sagittis.
-          </p>
+          </motion.p>
         </div>
         {/* right */}
         <div className="w-full md:flex justify-center md:my-10 relative rounded-xl pr-4 md:pr-0">
@@ -59,19 +90,36 @@ export default function Clients() {
       <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row-reverse justify-between px-4 pt-0 pb-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-16">
         {/* left */}
         <div className="w-full md:my-20">
-          <h1 className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+          >
             Smart Contracts
-          </h1>
-          <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
             Aliquam leo odio, sagittis quis ornare quis.
-          </p>
-          <ul className="list-disc list-inside text-subTitleColor text-sm md:leading-6">
-            <li>Smart contract implementation</li>
-            <li>Smart legal contracts</li>
-            <li>Basic contract law</li>
-          </ul>
+          </motion.p>
+          <motion.ul
+            variants={card}
+            initial="hide"
+            whileInView="show"
+            className="list-disc list-inside text-subTitleColor text-sm md:leading-6"
+          >
+            <motion.li variants={cardItem}>
+              Smart contract implementation
+            </motion.li>
+            <motion.li variants={cardItem}>Smart legal contracts</motion.li>
+            <motion.li variants={cardItem}>Basic contract law</motion.li>
+          </motion.ul>
         </div>
         {/* right */}
         <div className="w-full md:flex justify-center md:my-10 relative rounded-xl pl-4 md:pl-0">

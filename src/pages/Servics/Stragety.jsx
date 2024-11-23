@@ -1,5 +1,7 @@
 import stragetyUrl from "@/assets/servics/stragety.png";
 import digUrl from "@/assets/servics/dig.png";
+import { animate, card, cardItem } from "@/utils/animate";
+import { motion } from "framer-motion";
 
 export default function Clients() {
   return (
@@ -8,19 +10,36 @@ export default function Clients() {
       <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row-reverse justify-between px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-16">
         {/* left */}
         <div className="w-full md:my-20">
-          <h1 className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+          >
             Business strategy
-          </h1>
-          <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
             Aliquam leo odio, sagittis quis ornare quis.
-          </p>
-          <ul className="list-disc list-inside text-subTitleColor text-sm md:leading-6">
-            <li>Cost strategy</li>
-            <li>Differentiated product or service strategy</li>
-            <li>Focus on a niche strategy</li>
-          </ul>
+          </motion.p>
+          <motion.ul
+            variants={card}
+            initial="hide"
+            whileInView="show"
+            className="list-disc list-inside text-subTitleColor text-sm md:leading-6"
+          >
+            <motion.li variants={cardItem}>Cost strategy</motion.li>
+            <motion.li variants={cardItem}>
+              Differentiated product or service strategy
+            </motion.li>
+            <motion.li variants={cardItem}>Focus on a niche strategy</motion.li>
+          </motion.ul>
         </div>
         {/* right */}
         <div className="w-full md:flex justify-center md:my-10 relative rounded-xl pl-4 md:pl-0">
@@ -35,15 +54,25 @@ export default function Clients() {
       <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row justify-between px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-16">
         {/* left */}
         <div className="w-full md:my-20">
-          <h1 className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl text-titleColor font-medium md:max-w-md"
+          >
             Digitalization
-          </h1>
-          <p className="text-subTitleColor md:max-w-md pt-4 pb-8">
+          </motion.h1>
+          <motion.p
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-subTitleColor md:max-w-md pt-4 pb-8"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo
             odio, sagittis quis ornare quis.met, consectetur adipiscing elit.
             Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit. Aliquam leo odio, sagittis.
-          </p>
+          </motion.p>
         </div>
         {/* right */}
         <div className="w-full md:flex justify-center md:my-10 relative rounded-xl pr-4 md:pr-0">

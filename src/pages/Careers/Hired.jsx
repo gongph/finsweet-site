@@ -1,6 +1,8 @@
 import timeCircleurl from "@/assets/time-circle.svg";
 import hiredUrl from "@/assets/careers/hired.png";
 import { useNavigate } from "react-router-dom";
+import { animate } from "@/utils/animate";
+import { motion } from "framer-motion";
 
 export default function Human() {
   const navigate = useNavigate();
@@ -11,13 +13,23 @@ export default function Human() {
     <section className="container-fluid mx-auto flex flex-col-reverse md:flex-row px-4 py-10 md:pt-6 gap-y-6 md:gap-y-0 md:gap-x-2">
       {/* left */}
       <div className="w-full md:w-1/2 md:my-20">
-        <h1 className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-xl">
+        <motion.h1
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-3xl md:text-6xl text-[#1D3444] font-medium md:max-w-xl"
+        >
           We hired people who are very passionate about what they do
-        </h1>
-        <p className="text-subTitleColor pt-4 pb-8">
+        </motion.h1>
+        <motion.p
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="text-subTitleColor pt-4 pb-8"
+        >
           Through True Rich Attended does no end it his mother since real had
           half every him case in packages enquire we up ecstatic unsatiable saw.
-        </p>
+        </motion.p>
         <button
           onClick={handleClick}
           className="bg-brandOrange text-sm text-white px-6 py-2 rounded-full focus:outline-none focus:ring-1 focus:ring-brandOrange focus:ring-offset-2 hover:scale-110 duration-300"

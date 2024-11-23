@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { animate } from "@/utils/animate";
+
 import news01 from "@/assets/news-1.png";
 import news02 from "@/assets/news-2.png";
 import news03 from "@/assets/news-3.png";
@@ -11,7 +14,12 @@ export default function News() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-8 gap-y-6 md:gap-y-0">
           {/* grid item 1 */}
-          <div className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0">
+          <motion.div
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0"
+          >
             <img src={news01} className="object-cover rounded-lg" />
             <div className="pt-4 md:pt-6 md:pb-4 md:px-4 space-y-4">
               <Link
@@ -34,9 +42,14 @@ export default function News() {
                 </span>
               </Link>
             </div>
-          </div>
+          </motion.div>
           {/* grid item 2 */}
-          <div className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0">
+          <motion.div
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0"
+          >
             <img src={news02} className="object-cover rounded-lg" />
             <div className="pt-4 md:pt-6 md:pb-4 md:px-4 space-y-4">
               <Link
@@ -59,9 +72,14 @@ export default function News() {
                 </span>
               </Link>
             </div>
-          </div>
+          </motion.div>
           {/* grid item 3 */}
-          <div className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0">
+          <motion.div
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="rounded-2xl bg-white py-8 px-4 md:py-0 md:px-0"
+          >
             <img src={news03} className="object-cover rounded-lg" />
             <div className="pt-4 md:pt-6 md:pb-4 md:px-4 space-y-4">
               <Link
@@ -84,7 +102,7 @@ export default function News() {
                 </span>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

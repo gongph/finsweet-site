@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { animate } from "@/utils/animate";
+
 import energyUrl from "@/assets/home/energy.png";
 export default function Energy() {
   return (
@@ -9,9 +12,14 @@ export default function Energy() {
       {/* item-2 */}
       <div className="w-full md:w-1/2 md:px-4 bg-brandOrange md:flex flex-col items-center justify-center">
         <div className="max-w-md">
-          <h1 className="text-3xl md:text-4xl ml-4 py-4 md:px-0 font-bold text-white">
+          <motion.h1
+            variants={animate}
+            initial="hide"
+            whileInView="show"
+            className="text-3xl md:text-4xl ml-4 py-4 md:px-0 font-bold text-white"
+          >
             Energy of a start-up combined with 30 years of experience.
-          </h1>
+          </motion.h1>
           <button className="rounded-full text-brandOrange bg-white px-6 py-2 mb-6 ml-4 md:mt-8 md:mb-0 block self-start">
             See all services
           </button>

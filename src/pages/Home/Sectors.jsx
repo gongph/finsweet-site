@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { animate } from "@/utils/animate";
+
 import sectorImg01 from "@/assets/news-1.png";
 import sectorImg02 from "@/assets/news-2.png";
 import sectorImg03 from "@/assets/news-3.png";
@@ -16,7 +19,12 @@ export default function Sectors() {
       {/* Card */}
       <div className="sectors-card grid grid-col-1 justify-center md:grid-cols-3 gap-y-4 md:gap-y-0 md:gap-x-10 px-4">
         {/* item 1 */}
-        <div className="secctors-card-item flex flex-col space-y-4">
+        <motion.div
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="secctors-card-item flex flex-col space-y-4"
+        >
           <img src={sectorImg01} className="shrink-0 object-cover" />
           <h3 className="text-titleColor font-medium text-lg">
             Business strategy
@@ -34,9 +42,14 @@ export default function Sectors() {
               →
             </span>
           </a>
-        </div>
+        </motion.div>
         {/* item 2 */}
-        <div className="secctors-card-item flex flex-col space-y-4">
+        <motion.div
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="secctors-card-item flex flex-col space-y-4"
+        >
           <img src={sectorImg02} className="shrink-0 object-cover" />
           <h3 className="text-titleColor font-medium text-lg">
             Digitalization
@@ -54,9 +67,14 @@ export default function Sectors() {
               →
             </span>
           </a>
-        </div>
+        </motion.div>
         {/* item 3 */}
-        <div className="secctors-card-item flex flex-col space-y-4">
+        <motion.div
+          variants={animate}
+          initial="hide"
+          whileInView="show"
+          className="secctors-card-item flex flex-col space-y-4"
+        >
           <img src={sectorImg03} className="shrink-0 object-cover" />
           <h3 className="text-titleColor font-medium text-lg">
             Risk assessment
@@ -74,7 +92,7 @@ export default function Sectors() {
               →
             </span>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
