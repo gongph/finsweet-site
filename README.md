@@ -41,6 +41,8 @@ pnpm lint
 - [React](https://reactjs.org/)
 - [framer-motion](https://motion.framer.wiki/)
 - [react-icons](https://react-icons.github.io/react-icons/)
+- [redux](https://redux.js.org/)
+- [react-redux](https://react-redux.js.org/)
 
 ### Customize configuration
 
