@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: pnpm build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@4
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }},
           BRANCH: gh-pages,
