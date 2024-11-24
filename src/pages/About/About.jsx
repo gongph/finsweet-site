@@ -4,8 +4,8 @@ import Human from "./Human";
 import Experience from "./Experience";
 import Corner from "./Corner";
 import Teamwork from "./Teamwork";
-import Dream from "@/pages/home/Dream";
-import News from "@/pages/home/News";
+import Dream from "@/pages/Home/Dream";
+import News from "@/pages/Home/News";
 
 export default function About() {
   return (
