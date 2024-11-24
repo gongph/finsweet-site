@@ -25,5 +25,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           clean: true,
-          ssh-key: ${{ secrets.DEPLOY_KEY }},
+          token: ${{ secrets.DEPLOY_KEY }},
           folder: ./dist
