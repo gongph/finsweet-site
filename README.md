@@ -1,6 +1,6 @@
 # Finsweet site
 
-A responsive website based on Vite + Tailwindcss + React.
+A responsive website based on Vite + Tailwindcss + React
 
 The UI design is from [MasterGo](https://mastergo.com/)
 
