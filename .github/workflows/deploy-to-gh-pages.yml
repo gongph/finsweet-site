@@ -26,4 +26,4 @@ jobs:
         with:
           clean: true,
           ssh-key: ${{ secrets.DEPLOY_KEY }},
-          folder: ./dist
+          folder: dist
