@@ -33,7 +33,7 @@ export default function Clients() {
             variants={card}
             initial="hide"
             whileInView="show"
-            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6"
+            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6 marker:text-brandOrange"
           >
             <motion.li variants={cardItem}>
               Individual risk assessment
@@ -112,7 +112,7 @@ export default function Clients() {
             variants={card}
             initial="hide"
             whileInView="show"
-            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6"
+            className="list-disc list-inside text-subTitleColor dark:text-slate-400 text-sm md:leading-6 marker:text-brandOrange"
           >
             <motion.li variants={cardItem}>
               Smart contract implementation
