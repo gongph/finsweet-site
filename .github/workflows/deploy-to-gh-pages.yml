@@ -23,6 +23,6 @@ jobs:
         run: pnpm build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
-        env:
+        with:
           ssh-key: ${{ secrets.ACCESS_TOKEN }},
-          folder: dist
+          folder: ./dist
