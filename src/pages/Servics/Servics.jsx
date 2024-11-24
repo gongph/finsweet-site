@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import Clients from "./Clients";
 import Stragety from "./Stragety";
 import Risk from "./Risk";
-import Dream from "@/pages/home/Dream";
-import News from "@/pages/home/News";
+import Dream from "@/pages/Home/Dream";
+import News from "@/pages/Home/News";
 
 export default function About() {
   return (
