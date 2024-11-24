@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-white dark:bg-brand-dark/90;
+    @apply bg-white dark:bg-gradient-to-br from-violet-950 to-brand-dark;
   }
   .container-fluid {
     @apply container lg:max-w-5xl z-10;
