@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from "@/assets/logo.svg";
+import { useSelector } from "react-redux";
+import logoDark from "@/assets/logo.svg";
+import logoLight from "@/assets/logo-white.svg";
 import Hamburger from "./Hamburger";
 import ThemeToggle from "./ThemeToggle";
 import Sidebar from "./Sidebar";
@@ -10,14 +12,14 @@ export default function Header() {
   // Active class
   const linkClass = "hover:text-brandOrange transition-colors hidden md:block";
   const activeLinkClass = `${linkClass} text-brandOrange`;
-
   const links = getMenus(); // Get menu links
   const [expand, setExpand] = useState(false); // Add state to track expand
+  const theme = useSelector((state) => state.theme.value);
 
   // Scroll to top when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  });
 
   // Toggle expand state when hamburger is clicked
   const handleHamburgerClick = () => {
@@ -31,7 +33,11 @@ export default function Header() {
         <div className="container-fluid px-4 md:px-0 mx-auto h-16 md:h-20 flex items-center justify-between">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="logo" className="shrink-0 w-24 md:w-28" />
+              <img
+                src={theme === "light" ? logoDark : logoLight}
+                alt="logo"
+                className="shrink-0 w-24 md:w-28"
+              />
             </Link>
           </div>
           <nav className="flex items-center gap-x-6 text-gay-700 dark:text-slate-300 font-medium">
