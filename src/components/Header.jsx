@@ -19,7 +19,7 @@ export default function Header() {
   // Scroll to top when the page loads
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
 
   // Toggle expand state when hamburger is clicked
   const handleHamburgerClick = () => {
@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <>
       {/* header */}
-      <div className="sticky top-0 z-50 bg-[#fff]/95 shadow-sm backdrop-blur dark:bg-brand-dark/50 dark:text-gray-light">
+      <div className="sticky top-0 z-50 bg-[#fff]/50 shadow-sm backdrop-blur dark:bg-brand-dark/50 dark:text-gray-light">
         <div className="container-fluid px-4 md:px-0 mx-auto h-16 md:h-20 flex items-center justify-between">
           <div className="logo">
             <Link to="/">
