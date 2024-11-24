@@ -23,7 +23,7 @@ jobs:
         run: pnpm build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@master
-        en:
+        env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }},
           BRANCH: gh-pages,
           FOLDER: dist
