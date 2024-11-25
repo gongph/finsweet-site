@@ -18,7 +18,7 @@ export default function Header() {
 
   // Scroll to top when the page loads
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.body.scrollIntoView({ behavior: "smooth", block: "start" });
   }, []);
 
   // Toggle expand state when hamburger is clicked
